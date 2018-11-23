@@ -16,9 +16,9 @@ class Mobile {
         System.out.println("Message: [" + message + "]");
     }
 
-    /*public void getInfo() {
-        System.out.println("name: [" + this.name + "]");
-    }*/
+    public void getInfo() {
+        System.out.println("name: " + this.name + " color: " + this.color + " brand: " + this.brand);
+    }
 
 
 }
