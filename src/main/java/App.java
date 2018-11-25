@@ -14,6 +14,21 @@ public class App {
         AndroidMobile SamsungC9 = new AndroidMobile("Samsung C9","white","Samsung");
         SamsungC9.call("Samsung is good!");
         SamsungC9.getInfo();
+
+        Person venice = new Person(mobileA, "Venice");
+        venice.sentMessage("My name is Venice, I like to play badminton.");
+
+        Person Mum = new Person(iPhoneX, "Mum");
+
+        Mum.sentMessage("I am Mum");
+        Mum.sentMessage("I ammmmmmmmmmmmmmmmm Mum");
+        Mum.setMobile(SamsungC9);
+        Mum.sentMessage("I miss Dad");
+        Mum.sentMessage("I misssssssssssssssssss Dad");
+
+       iPhoneRobot iphoneRobotTest = new iPhoneRobot(iPhoneX);
+       iphoneRobotTest.sentMessage("Test");
+
     }
 }
 

@@ -3,10 +3,13 @@ class AndroidMobile extends Mobile {
         super(name, color, brand);
     }
     @Override
-    public void call(String message){
-        System.out.println("<Android>");
-        super.call(message);
+    public void call(String message) {
+        if (message.length() > 25) {
+            System.out.print("<Andriod> Message cannot be sent\n");
+        } else {
+            System.out.println("<Android>");
+            super.call(message);
+        }
     }
-
 }
 

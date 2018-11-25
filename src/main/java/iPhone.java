@@ -3,9 +3,12 @@ class iPhone extends Mobile {
         super(name, color, brand);
     }
     @Override
-    public void call(String message){
-        System.out.println("<iPhone>");
-        super.call(message);
+    public void call(String message) {
+        if (message.length() > 15) {
+            System.out.print("<iPhone> Message cannot be sent\n");
+        } else {
+            System.out.println("<iPhone>");
+            super.call(message);
+        }
     }
-
 }
